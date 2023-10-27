@@ -62,7 +62,7 @@ na.omit(vector_5)
 
 # 向量的运算
 5 * vector_1
-10 + vector_
+10 + vector_1
 # 向量之间相加只保留元素少的向量的位数
 vector_1 + vector_2
 
@@ -194,15 +194,19 @@ s2 <- sample(100,10,replace = T)
 unique(s2)  # x中重复的数据只显示一次
 
 # 统计分布
-# 正态分布:norm(x,mean,sd)
-dnorm(c(0,1,2,3),0,1)  # 密度函数求值
+
+# 正态分布
+dnorm(4,0,1)  # 密度函数求值
 pnorm(c(0.1,0.2,0.5,0.9),0,1)  # 分布函数求值
 qnorm(c(0.1,0.2,0.5,0.9),0,1)  # 分位数求值
 rnorm(10,0,1)  # 生成正态随机数
 
-# 二项分布
-
-# 超几何分布
+# 二项分布 binom(x,n,p)
+dbinom(1,3,0.2)
+pbinom(3,3,0.2)
+qbinom(1,3,0.2)
+rbinom(10,10,0.5)
+mean(rbinom(10,10,0.5))
 
 
 
